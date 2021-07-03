@@ -1,4 +1,1 @@
-release: python manage.py makemigrations --no-input
-release: python manage.py migrate --no-input
-
-web: gunicorn deploy-library-app/library.wsgi
+web: gunicorn library.wsgi --log-file -
